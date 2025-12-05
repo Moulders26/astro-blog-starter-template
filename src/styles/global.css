@@ -10,9 +10,10 @@
   --text-main: #0F172A;      /* slate-900 */
   --text-muted: #475569;     /* slate-600 */
 
-  /* Accent – Engineer Minimal (blue) */
-  --accent: #3B82F6;         /* blue-500 */
-  --accent-hover: #2563EB;   /* blue-600 */
+
+  --accent: #22C55E;
+  --accent-hover: #16A34A;
+
 
   --header-bg: rgba(248, 250, 252, 0.82);
   --header-border: rgba(148, 163, 184, 0.35);

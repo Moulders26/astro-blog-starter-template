@@ -1,25 +1,35 @@
 :root {
   --bg: #F8FAFC;
-  --card-bg: #FFFFFF;
-  --border: rgba(0, 0, 0, 0.06);
+  --card-bg: rgba(255, 255, 255, 0.78);
+  --border: rgba(148, 163, 184, 0.38);
   --text-main: #1E293B;
   --text-muted: #475569;
   --accent: #3B82F6;
   --accent-hover: #2563EB;
 }
 
+/* ------------------ Background ------------------ */
+
 body {
-  background: radial-gradient(circle at top left, #E5F0FF 0, #F8FAFC 45%, #EFF4FB 100%);
+  background: radial-gradient(circle at top left,
+    #DCE8F8 0%,
+    #E8EEF6 30%,
+    #F1F5F9 65%,
+    #F8FAFC 100%
+  );
   color: var(--text-main);
   font-family: system-ui, sans-serif;
 }
 
+/* ------------------ Layout ------------------ */
 
 .page {
   max-width: 800px;
   margin: 0 auto;
   padding: 2rem 1.5rem 3rem;
 }
+
+/* ------------------ Hero ------------------ */
 
 .hero {
   text-align: left;
@@ -45,6 +55,8 @@ body {
   color: var(--text-main);
 }
 
+/* ------------------ Links ------------------ */
+
 .links {
   display: flex;
   flex-wrap: wrap;
@@ -55,11 +67,11 @@ body {
   display: inline-block;
   padding: 0.45rem 0.9rem;
   border-radius: 999px;
-  border: 1px solid rgba(148, 163, 184, 0.7);
+  border: 1px solid var(--border);
   text-decoration: none;
   font-size: 0.9rem;
   color: var(--accent);
-  background: rgba(255, 255, 255, 0.75);
+  background: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   transition: all 0.15s ease;
@@ -72,16 +84,13 @@ body {
   border-color: var(--accent-hover);
 }
 
+/* ------------------ Cards ------------------ */
 
-.card {
-  border-radius: 0.9rem;
-  border: 1px solid rgba(148, 163, 184, 0.35); /* slate-ish */
-  padding: 1rem 1.1rem;
-  background: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
-  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-bottom: 2rem;
 }
 
 @media (min-width: 700px) {
@@ -91,17 +100,24 @@ body {
 }
 
 .card {
-  border-radius: 0.75rem;
+  border-radius: 0.9rem;
   border: 1px solid var(--border);
   padding: 1rem 1.1rem;
   background: var(--card-bg);
-  transition: box-shadow 0.15s ease;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow:
+    0 4px 10px rgba(0, 0, 0, 0.05),
+    0 2px 4px rgba(0, 0, 0, 0.04);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
 }
 
 .card:hover {
   transform: translateY(-2px);
-  box-shadow: 0 14px 40px rgba(15, 23, 42, 0.12);
-  border-color: rgba(59, 130, 246, 0.5); /* accent blue hint */
+  box-shadow:
+    0 12px 28px rgba(0, 0, 0, 0.10),
+    0 4px 8px rgba(0, 0, 0, 0.05);
+  border-color: rgba(59, 130, 246, 0.5);
 }
 
 .card__title {
@@ -118,9 +134,7 @@ body {
   color: var(--text-muted);
 }
 
-.family {
-  margin-bottom: 2rem;
-}
+/* ------------------ Family Button ------------------ */
 
 .primary-button {
   display: inline-block;
@@ -129,9 +143,9 @@ body {
   border-radius: 999px;
   text-decoration: none;
   font-size: 0.9rem;
-  border: 1px solid rgba(148, 163, 184, 0.7);
+  border: 1px solid var(--border);
   color: var(--accent);
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.75);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   transition: all 0.15s ease;
@@ -144,3 +158,8 @@ body {
   border-color: var(--accent-hover);
 }
 
+/* ------------------ Family Section ------------------ */
+
+.family {
+  margin-bottom: 2rem;
+}

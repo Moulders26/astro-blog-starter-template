@@ -9,10 +9,11 @@
 }
 
 body {
-  background: var(--bg);
+  background: radial-gradient(circle at top left, #E5F0FF 0, #F8FAFC 45%, #EFF4FB 100%);
   color: var(--text-main);
   font-family: system-ui, sans-serif;
 }
+
 
 .page {
   max-width: 800px;

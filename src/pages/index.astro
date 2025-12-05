@@ -5,19 +5,19 @@ import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 
 const links = [
-  { label: 'GitHub', href: 'https://github.com/YOURUSERNAME' },
-  { label: 'LinkedIn', href: 'https://linkedin.com/in/YOURPROFILE' },
+  { label: 'GitHub', href: 'https://github.com/Moulders26' },
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/matthew-mould-a8518b83/' },
   { label: 'Email', href: 'mailto:matt@emould.net' },
 ];
 
 const infoCards = [
   {
     title: 'Work',
-    body: 'I work in IT infrastructure and Microsoft 365, mostly focused on automation, endpoint management, and keeping things running when they’d really rather not.',
+    body: 'I work in Enterprise IT mainly Microsoft 365, mostly focused on automation, endpoint management, and keeping things running when they’d really rather not.',
   },
   {
     title: 'Homelab',
-    body: 'At home I run a Debian server called Endor with Dockerised services for media, backups, monitoring and more. It’s my main playground for trying new tools and breaking things safely.',
+    body: 'At home I run a Debian server with Dockerised services for media, backups, monitoring and more. It’s my main playground for trying new tools and breaking things safely.',
   },
   {
     title: 'House & life',
@@ -29,7 +29,7 @@ const infoCards = [
 <!doctype html>
 <html lang="en">
   <head>
-    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    <BaseHead title={eMould} description={Matt's Family homepage} />
   </head>
   <body>
     <Header />
@@ -37,7 +37,7 @@ const infoCards = [
       <section class="hero">
         <h1 class="hero__title">Matt Mould</h1>
         <p class="hero__tagline">
-          IT infrastructure, homelab tinkering and ongoing house renovation.
+          Enterprise IT, homelab tinkering and ongoing DIY enthusiastic.
         </p>
         <p class="hero__intro">
           emould.net is our personal family domain. Publicly it’s just a simple calling card, and a place for me to park a few notes about the things I build and break.

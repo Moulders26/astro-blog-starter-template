@@ -5,23 +5,23 @@ import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 
 const links = [
-  { label: 'GitHub', href: 'https://github.com/Moulders26' },
-  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/matthew-mould-a8518b83/' },
-  { label: 'Email', href: 'mailto:matt@emould.net' },
+  { label: "GitHub", href: "https://github.com/Moulders26" },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/matthew-mould-a8518b83/" },
+  { label: "Email", href: "mailto:matt@emould.net" },
 ];
 
 const infoCards = [
   {
-    title: 'Work',
-    body: 'I work in Enterprise IT mainly Microsoft 365, mostly focused on automation, endpoint management, and keeping things running when theyd really rather not.',
+    title: "Work",
+    body: "I work in Enterprise IT mainly Microsoft 365, mostly focused on automation, endpoint management, and keeping things running when they would really rather not.",
   },
   {
-    title: 'Homelab',
-    body: 'At home I run a Debian server with Dockerised services for media, backups, monitoring and more. It’s my main playground for trying new tools and breaking things safely.',
+    title: "Homelab",
+    body: "At home I run a Debian server with Dockerised services for media, backups, monitoring and more. It is my main playground for trying new tools and breaking things safely.",
   },
   {
-    title: 'House & life',
-    body: 'Offline, I’m slowly renovating our home – loft conversion, kitchen redesign, lighting, insulation – and trying to keep everything vaguely functional for the family.',
+    title: "House & life",
+    body: "Offline, I am slowly renovating our home – loft conversion, kitchen redesign, lighting, insulation – and trying to keep everything vaguely functional for the family.",
   },
 ];
 ---
@@ -29,7 +29,7 @@ const infoCards = [
 <!doctype html>
 <html lang="en">
   <head>
-    <BaseHead title={eMould} description={Matt's Family homepage} />
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
   </head>
   <body>
     <Header />
@@ -37,10 +37,10 @@ const infoCards = [
       <section class="hero">
         <h1 class="hero__title">Matt Mould</h1>
         <p class="hero__tagline">
-          Enterprise IT, homelab tinkering and ongoing DIY enthusiastic.
+          Enterprise IT, homelab tinkering and ongoing DIY enthusiast.
         </p>
         <p class="hero__intro">
-          emould.net is our personal family domain. Publicly it’s just a simple calling card, and a place for me to park a few notes about the things I build and break.
+          emould.net is our personal family domain. Publicly it is just a simple calling card, and a place for me to park a few notes about the things I build and break.
         </p>
 
         <div class="links">
@@ -65,7 +65,7 @@ const infoCards = [
         <h2 class="card__title">Family area</h2>
         <p class="card__body">
           We use emould.net for family email and a small private site for photos, notes and planning.
-          If you’re family, use the link below to sign in.
+          If you are family, use the link below to sign in.
         </p>
         <a href="https://family.emould.net" class="primary-button">
           Family login
